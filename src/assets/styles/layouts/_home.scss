@@ -2,8 +2,13 @@ body {
   margin: 0;
   padding: 30px;
   font-family: $font-family-sans-serif;
-  background-color: lighten( $uoc-masterbrand, 25% );
+  background-image: <img src="assets/images/fondo.png">; //Ver como salir a las carpetas correspondientes
   color: $uoc-corporate;
+}
+
+.div-container{
+    background-color: white;
+    border: 3px solid aquamarine;
 }
 
 .uoc-logo {
@@ -17,4 +22,109 @@ body {
   font-family: $font-family-serif;
   font-size: 36px;
   font-weight: 700;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    background-image: url(assets/images/fondo.png);
+    background-size: contain;
+    background-repeat: repeat;
+    font-size: 18px;
+}
+
+.div-container{
+    width: 768px;
+    border: solid 8px #00a498;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.15);
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: white;
+    padding: 35px;
+}
+
+.div-header {
+    text-align: center;
+    display:inline;
+
+}
+
+.foto-perfil{
+    width: 180px;
+    border: solid 4px #00a498;
+}
+
+.div-header-text{
+    width: 40%;
+    border: solid 4px #00a498;
+    border-style: dashed;
+}
+
+.header-text-about{
+    text-align: left;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.zig-zag{
+    border: solid 5px white;
+    box-shadow: 3px 3px 3px -2px rgba(0,0,0,0.15);
+}
+
+
+
+h4 {
+    color:#00a498;
+    font-style: italic;
+    font-size: 24px;
+}
+
+
+ul{
+    list-style: none;
+}
+
+ul.color-block li{
+    background-color: #00a498;
+    color: white;
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+    padding: 10px;
+}
+
+ul.color-block a{
+
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.icon-estandar{
+    width: 50px;
+    padding: 15px;
+}
+
+
+.div-footer-contect{
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-text{
+    font-size: 24px;
+    line-height: 46px;
+}
+
+.footer-icon{
+width: 35px;
+    padding-right: 10px;
 }
