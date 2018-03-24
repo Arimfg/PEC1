@@ -1,29 +1,3 @@
-body {
-  margin: 0;
-  padding: 30px;
-  font-family: $font-family-sans-serif;
-  background-image: <img src="assets/images/fondo.png">; //Ver como salir a las carpetas correspondientes
-  color: $uoc-corporate;
-}
-
-.div-container{
-    background-color: white;
-    border: 3px solid aquamarine;
-}
-
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  max-width: 300px;
-  height: auto;
-}
-
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-}
-
 body{
     font-family: Helvetica, sans-serif;
     background-image: url(assets/images/fondo.png);
