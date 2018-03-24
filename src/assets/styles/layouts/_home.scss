@@ -7,13 +7,12 @@ body{
 }
 
 .div-container{
-    width: 768px;
+    max-width: 768px;
     border: solid 8px #00a498;
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.15);
     margin: 0 auto;
     margin-top: 50px;
     background-color: white;
-    padding: 35px;
 }
 
 .div-header {
@@ -28,7 +27,6 @@ body{
 }
 
 .div-header-text{
-    width: 40%;
     border: solid 4px #00a498;
     border-style: dashed;
 }
@@ -45,9 +43,47 @@ h3{
     font-size: 24px;
 }
 
-.zig-zag{
-    border: solid 5px white;
-    box-shadow: 3px 3px 3px -2px rgba(0,0,0,0.15);
+
+$height: 36px;
+$halfheight: ($height/2);
+$thickness: 110%; // increase to make the line thicker
+$offset: 4px;
+$backgroundcolor: #FFF;
+$linecolor: #00a498;
+
+
+.zig-zag {
+  margin: 7.5% 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  background: $backgroundcolor;
+  position: relative;
+  height: $height;
+  z-index: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+      right: 0;
+  }
+  &:before {
+    height: ($height - $offset);
+    top: $thickness;
+    background: linear-gradient(-135deg, $linecolor $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $linecolor $halfheight, transparent 0) 0 $halfheight;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: $height $height;
+  }
+  &:after {
+    height: $height;
+    top: 100%;
+    background: linear-gradient(-135deg, $backgroundcolor $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $backgroundcolor $halfheight, transparent 0) 0 $halfheight;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: $height $height;
+  }
 }
 
 
@@ -58,12 +94,7 @@ h4 {
     font-size: 24px;
 }
 
-
-ul{
-    list-style: none;
-}
-
-ul.color-block li{
+.color-block{
     background-color: #00a498;
     color: white;
     display: inline-block;
@@ -71,8 +102,7 @@ ul.color-block li{
     margin: 5px;
     padding: 10px;
 }
-
-ul.color-block a{
+.color-block a{
 
     color:white;
 }
