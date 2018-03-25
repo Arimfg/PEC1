@@ -1,8 +1,8 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "1.3.0",
+  "name": "PEC 1",
+  "version": "1.4.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "`Proyect PEC 1 - Extended from Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
     "build": "webpack --progress --config build/webpack.config.js",
     "build:production": "webpack --progress -p --config build/webpack.config.js",
