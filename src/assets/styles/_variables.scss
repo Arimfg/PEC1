@@ -3,3 +3,11 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73EDFF;
+
+/*Variables para la linea en zig-zag */
+$height: 36px;
+$halfheight: ($height/2);
+$thickness: 110%; // increase to make the line thicker
+$offset: 4px;
+$backgroundcolor: #FFF;
+$linecolor: #00a498;
