@@ -1,89 +1,46 @@
-body{
-    font-family: Helvetica, sans-serif;
-    background-image: url(assets/images/fondo.png);
-    background-size: contain;
-    background-repeat: repeat;
-    font-size: 18px;
+body {
+  font-family: Helvetica, sans-serif;
+  background-image: url(assets/images/fondo.png);
+  background-size: contain;
+  background-repeat: repeat;
+  font-size: 18px;
 }
 
-.separator{
-  margin-top:40px;
+.separator {
+  margin-top: 40px;
 }
 
-.div-container{
-    max-width: 768px;
-    border: solid 8px #00a498;
-    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.15);
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: white;
+.div-container {
+  max-width: 768px;
+  border: solid 8px #00a498;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: white;
 }
 
 .div-header {
-    text-align: center;
-    display:inline;
-
+  text-align: center;
+  display: inline;
 }
 
-.foto-perfil{
-    width: 180px;
-    border: solid 4px #00a498;
+.foto-perfil {
+  width: 180px;
+  border: solid 4px #00a498;
+  max-height:250px;
 }
-
 
 .boder-block {
   border-right: 2px solid #00a498;
 }
 
-
-
-@media only screen and (max-width: 728px) {
-.center {
-  text-align:center;
+h2 {
+  font-size: 48px;
 }
 
-.div-container{
-    margin-top: 0px;
+h3 {
+  font-size: 24px;
 }
-.header-mobile{
-  text-align:center;
-}
-  .div-header-text-mobile{
-    border: solid 4px #00a498;
-    border-style: dashed;
-     text-align:center;
-  }
-  .div-header-text{
-    border: solid 0px;
-     text-align:center;
-}
-
-.boder-block{border-right:0px;}
-
-}
-
-
-
-@media only screen and (min-width: 728px) {
-
-.div-header-text{
-    border: solid 4px #00a498;
-    border-style: dashed;
-}
-
-.header-text-about{
-    text-align: left;
-}
-}
-
-h2{
-    font-size: 48px;
-}
-
-h3{
-    font-size: 24px;
-}
-
 
 
 
@@ -166,3 +123,53 @@ a{
 width: 35px;
     padding-right: 10px;
 }
+
+.sub{
+  font-size:0.8em;
+}
+
+.margin-top-mobile{
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 728px) {
+.separator-mobile {
+  margin-top: 40px;
+}
+  .center {
+    text-align: center;
+  }
+  .div-container {
+    margin-top: 0px;
+  }
+  .header-mobile {
+    text-align: center;
+  }
+  .div-header-text-mobile {
+    border: solid 4px #00a498;
+    border-style: dashed;
+    text-align: center;
+  }
+  .div-header-text {
+    border: solid 0px;
+    text-align: center;
+  }
+  .boder-block {
+    border-right: 0px;
+  }
+  .icon-estandar{
+    max-width:50px;
+    margin-bottom:15px;
+  }
+}
+
+@media only screen and (min-width: 728px) {
+  .div-header-text {
+    border: solid 4px #00a498;
+    border-style: dashed;
+  }
+  .header-text-about {
+    text-align: left;
+  }
+}
+
